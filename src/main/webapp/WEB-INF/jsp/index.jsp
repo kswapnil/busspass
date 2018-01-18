@@ -9,10 +9,10 @@
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
 
-	<!--
-	<spring:url value="/css/main.css" var="springCss" />
+	
+	<spring:url value="/css/login.css" var="springCss" />
 	<link href="${springCss}" rel="stylesheet" />
-	 -->
+	
 	<c:url value="/css/main.css" var="jstlCss" />
 	<link href="${jstlCss}" rel="stylesheet" />
 	
@@ -119,28 +119,35 @@
 					<img class="img-responsive img-border img-left" src="/images/SanjivaniLogo.jpg" alt="sanjivaniLogo">                    
 				</div>
 				<div class="col-lg-8">
-				<form action="#" method="post">
-				<h1 class="intro-text text-center"><b>Log In</b></h1><hr>
-				
-				<h1 class="intro-text text-left" style="padding-right: 2cm"><b>Email:</b>
-				<input class="log_box" type="text" name="email" placeholder="Email"  style="margin-left: 3cm">	
-				</h1>
-				
-				<hr><h1 class="intro-text text-left"><b>Password:</b>
-				<input class="log_box" type="text" name="pass" placeholder="Password" style="margin-left: 2cm">
-				</h1>
-				<hr>
-				<p style="color:red;"> ${error}</p>
-				<button type="submit" class="btn btn-primary ">Log In</button>			        
-                <a href="#" class="btn btn-danger" role="button">Register</a>
-				</form>                                   
+				<h3 class="brand-caption2 text-center">Login</h3>
+						<div class="login">
+						  <form class="login-form" action="#">
+						  
+						    <div class="input-group input-group-lg">
+						       <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="email" class="form-control" id="user-name" placeholder="Email" required tabindex="1"/>
+						    </div>
+						    <hr>
+						     <div class="input-group input-group-lg">
+						       <div class="input-group-addon"><span class="fa fa-lg fa-key"/></div>
+						       <input type="password" class="form-control" id="password" placeholder="Password" required  tabindex="2" />
+						     </div>
+						    <hr>
+				        
+						      <a href="#" class="pull-right">Forgotten your password?</a>
+						      
+						      <p style="color:red;"> ${error}</p>
+							<button type="submit" class="btn btn-primary ">Log In</button>			        
+                                <a href="register.htm" class="btn btn-danger" role="button">Register</a>
+						  </form>
+					</div>
 				</div>
             </div>
         </div>
 
         <div class="row">
             <div class="box">
-             <p class="brand-caption">Our Management</p>
+             <p class="brand-caption2">Our Management</p>
                 <div class="col-lg-3">
                  	<img class="img-responsive img-border img-left" src="/images/Shankarrao-Genuji-Kolhe.jpg" alt="">	  
 					<p class="intro-text text-left"> Shri Shankarrao G. Kolhe</p>
