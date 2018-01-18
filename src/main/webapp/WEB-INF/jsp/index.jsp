@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Buss Pass System</a>
+                <a class="navbar-brand" href="#">Buss Pass System</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -140,9 +140,26 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    
-					box 3
+             <p class="brand-caption">Our Management</p>
+                <div class="col-lg-3">
+                 	<img class="img-responsive img-border img-left" src="/images/Shankarrao-Genuji-Kolhe.jpg" alt="">	  
+					<p class="intro-text text-left"> Shri Shankarrao G. Kolhe</p>
+					<p class="intro-text text-left"> Chairman</p>
+                </div>
+                 <div class="col-lg-3">
+                 	<img class="img-responsive img-border img-left" src="/images/Nitinrao-kolhe.jpg" alt="">	  
+					<p class="intro-text text-left"> Shri Nitinrao S. Kolhe</p>
+					<p class="intro-text text-left"> Executive Trustee</p>
+                </div>
+                 <div class="col-lg-3">
+                 	<img class="img-responsive img-border img-left" src="/images/Amit-kolhe.jpg" alt="">	  
+					<p class="intro-text text-left"> Shri Amit N. Kolhe</p>
+					<p class="intro-text text-left"> Managing Director</p>
+                </div>
+                 <div class="col-lg-3">
+                 	<img class="img-responsive img-border img-left" src="/images/Principal.jpg" alt="">	  
+					<p class="intro-text text-left"> Dr. D.N.Kyatanavar</p>
+					<p class="intro-text text-left"> Principal</p>
                 </div>
             </div>
         </div>
