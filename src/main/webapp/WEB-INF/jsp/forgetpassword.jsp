@@ -119,26 +119,17 @@
 					<img class="img-responsive img-border img-left" src="/images/SanjivaniLogo.jpg" alt="sanjivaniLogo">                    
 				</div>
 				<div class="col-lg-8">
-				<h3 class="brand-caption2 text-center">Login</h3>
+				<h3 class="brand-caption2 text-center">Forgot Password:</h3>
 						<div class="login">
-						  <form class="login-form" action="login">
+						  <form class="login-form" action="fromforgotpassword">
 						  
 						    <div class="input-group input-group-lg">
 						       <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
 						       <input type="email" class="form-control" name="email" placeholder="Email" required tabindex="1"/>
 						    </div>
 						    <hr>
-						     <div class="input-group input-group-lg">
-						       <div class="input-group-addon"><span class="fa fa-lg fa-key"/></div>
-						       <input type="password" class="form-control" name="password" placeholder="Password" required  tabindex="2" />
-						     </div>
-						    <hr>
-				        
-						      <a href="forgotpasswordpage" class="pull-right">Forgotten your password?</a>
-						      
 						      <p style="color:red;"> ${error}</p>
-							<button type="submit" class="btn btn-primary ">Log In</button>			        
-                                <a href="register" class="btn btn-danger" role="button">Register</a>
+							<button type="submit" class="btn btn-primary ">Get My Password</button>			        
 						  </form>
 					</div>
 				</div>

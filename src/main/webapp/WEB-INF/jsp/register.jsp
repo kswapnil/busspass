@@ -119,26 +119,40 @@
 					<img class="img-responsive img-border img-left" src="/images/SanjivaniLogo.jpg" alt="sanjivaniLogo">                    
 				</div>
 				<div class="col-lg-8">
-				<h3 class="brand-caption2 text-center">Login</h3>
+				<h3 class="brand-caption2 text-center">Sign Up</h3>
 						<div class="login">
-						  <form class="login-form" action="login">
+						  <form class="login-form" action="registerTodb">
 						  
 						    <div class="input-group input-group-lg">
-						       <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
-						       <input type="email" class="form-control" name="email" placeholder="Email" required tabindex="1"/>
+						      <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="text" class="form-control" id="fname" placeholder="First Name" required tabindex="1"/>
+						    </div>
+						    <hr>
+						    <div class="input-group input-group-lg">
+						    <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="text" class="form-control" id="lname" placeholder="Last Name" required tabindex="1"/>
+						    </div>
+						    <hr>
+						    <div class="input-group input-group-lg">
+						    <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="email" class="form-control" id="email" placeholder="Email" required tabindex="1"/>
 						    </div>
 						    <hr>
 						     <div class="input-group input-group-lg">
-						       <div class="input-group-addon"><span class="fa fa-lg fa-key"/></div>
-						       <input type="password" class="form-control" name="password" placeholder="Password" required  tabindex="2" />
+						     <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="password" class="form-control" id="password" placeholder="Password" required  tabindex="2" />
 						     </div>
 						    <hr>
+						    <div class="input-group input-group-lg">
+						    <div class="input-group-addon"><span class="fa fa-lg fa-envelope"/></div>
+						       <input type="number" class="form-control" id="age" placeholder="Age" required tabindex="1"/>
+						    </div>
+						    <hr>
 				        
-						      <a href="forgotpasswordpage" class="pull-right">Forgotten your password?</a>
+						      <a href="/" class="pull-right">Already a User!!</a>
 						      
 						      <p style="color:red;"> ${error}</p>
-							<button type="submit" class="btn btn-primary ">Log In</button>			        
-                                <a href="register" class="btn btn-danger" role="button">Register</a>
+							<button type="submit" class="btn btn-success ">Sign Up</button>			        
 						  </form>
 					</div>
 				</div>
