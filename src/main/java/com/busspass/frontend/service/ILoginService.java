@@ -18,4 +18,8 @@ public interface ILoginService {
 	public List<Registered_Users> getListOfUsers();
 	
 	public String forgotPassword(String email);
+	
+	public Registered_Users getUserByEmail(String email);
+	
+	public boolean updateUser(int id,Registered_Users user); 
 }

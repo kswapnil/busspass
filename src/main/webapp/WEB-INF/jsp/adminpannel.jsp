@@ -61,7 +61,9 @@
                     <li>
                         <a href="#">Feedback </a>
                     </li>
-					
+					<li>
+                        <a href="logout">Log Out </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -74,10 +76,18 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                
-                
-				Some Session Info Here
-				  Some Buttons related to Admin Here  
+                 <h1 class="admin-name" >Admin Panel</h1>
+					<hr>
+                     <h2 class="intro-text text-center"><b>welcome <%=session.getAttribute("username") %></b></h2>
+						 <div class="btn-group btn-group-lg" >
+						     <a href="adminpannel" class="btn btn-info" role="button">Manage Users</a>
+	                         <a href="managepassapplication" class="btn btn-info" role="button">View Applications</a>
+	                         <a href="managetransactions" class="btn btn-info" role="button">View Transactions</a>
+	                         <a href="viewdocuments" class="btn btn-info" role="button">View Uploaded Doc</a>
+	                         <a href="grantedpasses" class="btn btn-info" role="button">View Granted Pass</a>
+	                         <a href="managefeedback" class="btn btn-info" role="button">Manage FeedBack</a>
+	                         
+						</div>
                 </div>
             </div>
         </div>
@@ -88,9 +98,57 @@
             
                 <div class="col-lg-12 text-center">
                 
-					Tables Related to Admin                
+					<h2 class="intro-text text-left"><b>Manage Users</b></h2>
+                                         <p style="color:red;"> ${error}</p>
+                                         <table class="table-hover table-bordered" align="center" width="100%">
+                                             <tr>
+                                                    <th><h4>Id</h4></th>
+                                                    <th><h4>First Name</h4></th>
+                                                    <th><h4>Last Name</h4></th>
+                                                    <th><h4>Email</h4></th>
+                                                    <th><h4>Password</h4></th>
+                                                    <th><h4>age</h4></th>
+                                                    <th><h4>Action</h4></th>
+                                             </tr>
+                                             <c:forEach items="${usersList}" var="f">
+                                             <tr>
+                                                 <td><h5>${f.id}</h5></td>
+                                                 <td><h5>${f.firstName}</h5></td>
+                                                 <td><h5>${f.lastName}</h5></td>
+                                                 <td><h5>${f.email}</h5></td>
+                                                 <td><h5>${f.password}</h5></td>
+                                                 <td><h5>${f.age}</h5></td>
+                                                 <td><h5><a href="#">Delete | Edit</a></h5></td>
+                                                <br/>
+                                            </tr>
+                                             </c:forEach>
+                                         </table>                
 				
                 </div>
+           </div>
+        </div>
+        
+        <div class="row">
+            <div class="box">
+            
+                <div class="col-lg-12 text-center">
+                
+                	<h2 class="intro-text text-left"><b>Vision</b></h2>                      
+                    <p>
+						<ul class="news">
+						<li>Our vision is to create academic excellence and to make world class engineers for socio-economic upliftment of rural India.</li>
+						</ul>
+					   </p>
+                
+					<h2 class="intro-text text-left"><b>Mission</b></h2>                      
+                    <p>
+						<ul class="news">
+						<li>Our mission is to make use of Engineering & Technology the principal instruments of economic development to improve the quality of life of people through Education, Training and Research.</li>
+						<li>We are committed to the development of technical human resources towards socio economic growth of rural India for global competitiveness..</li>
+						</ul>
+					   </p>        
+                </div>
+           </div>
         </div>
 
     </div>
@@ -106,6 +164,7 @@
             </div>
         </div>
     </footer>
+
 
 
 	<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
